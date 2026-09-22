@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Launch &amp; Funnel Strategy — Ask Before You Build</title>
+<meta name="description" content="Designs a book's launch and makes the funnel-vs-companion-site call by asking first, not assuming. Owned-borrowed-earned sequencing, a real 6-email structure.">
+<meta property="og:title" content="Book Launch & Funnel Strategy">
+<meta property="og:description" content="The moment pricing psychology appears, the genre breaks. Ask first whether a real paid program exists — then build.">
+<meta property="og:image" content="https://nftyoginis.github.io/book-launch-funnel-strategy-skill/og-image.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --paper: #f5f6f5; --ink: #1b2320; --muted: #576057;
+    --harbor: #2f6b6f; --surface: #eaeeea; --border: #dbe1dc; --flag: #b5451f;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--paper); color: var(--ink); line-height: 1.6;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(245,246,245,0.96); border-bottom: 1px solid var(--border); backdrop-filter: blur(4px); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .brand { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .brand span { color: var(--harbor); }
+  .navlinks { display: flex; gap: 20px; align-items: center; }
+  .navlinks a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  .navlinks a:hover { color: var(--harbor); }
+  .btn { display: inline-block; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; border: 1px solid transparent; cursor: pointer; }
+  .btn-primary { background: var(--harbor); color: #fff; }
+  .btn-primary:hover { background: #245457; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--harbor); color: var(--harbor); }
+  header.hero { padding: 96px 0 72px; text-align: center; }
+  .kicker { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--harbor); border: 1px solid var(--harbor); border-radius: 20px; padding: 4px 14px; margin-bottom: 24px; }
+  header.hero h1 { font-size: 2.5rem; line-height: 1.2; margin: 0 0 20px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  header.hero p.sub { font-size: 1.15rem; color: var(--muted); max-width: 680px; margin: 0 auto 36px; }
+  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  section { padding: 64px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 1.8rem; margin-bottom: 8px; }
+  section p.lead { color: var(--muted); max-width: 700px; margin-bottom: 40px; }
+  .verb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .verb-card { background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--harbor); border-radius: 10px; padding: 22px; }
+  .verb-card .v { font-weight: 700; color: var(--harbor); font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; display: block; margin-bottom: 8px; }
+  .verb-card p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+  .flag-box { background: #fff; border: 1px solid var(--flag); border-left: 4px solid var(--flag); border-radius: 8px; padding: 24px 28px; margin-top: 32px; }
+  .flag-box .tag { color: var(--flag); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .flag-box p { margin: 10px 0 0; color: var(--ink); }
+  .chan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .chan-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 22px; }
+  .chan-card .n { font-weight: 700; color: var(--harbor); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 8px; }
+  .chan-card p { margin: 0; color: var(--ink); font-size: 0.9rem; }
+  .email-list { padding-left: 0; list-style: none; margin: 8px 0 0; }
+  .email-list li { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .email-list .num { font-weight: 700; color: var(--harbor); min-width: 24px; }
+  .email-list .beat { font-weight: 600; min-width: 160px; }
+  .email-list .job { color: var(--muted); font-size: 0.9rem; }
+  .token-demo { background: var(--surface); border: 1px dashed var(--harbor); border-radius: 8px; padding: 20px 24px; margin-top: 24px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88rem; color: var(--ink); }
+  .proof-block { background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 40px; text-align: center; color: var(--muted); }
+  ol.setup-steps { padding-left: 20px; }
+  ol.setup-steps li { margin-bottom: 14px; }
+  .faq-item { margin-bottom: 28px; }
+  .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .faq-item p { color: var(--muted); margin: 0; }
+  footer { padding: 48px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--harbor); text-decoration: none; }
+  @media (max-width: 640px) {
+    .navlinks { display: none; } header.hero h1 { font-size: 2rem; }
+    .email-list li { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Launch&amp;<span>Funnel</span></a>
+    <div class="navlinks">
+      <a href="#filter">The filter</a>
+      <a href="#channels">Sequencing</a>
+      <a href="#emails">The 6 emails</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#setup">Get started</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">Ask before you build</span>
+    <h1>The moment pricing psychology appears, the genre breaks.</h1>
+    <p class="sub">Before designing anything, this specialist asks one question: does a real paid program exist behind this book? The answer picks the model — a funnel, built honestly as one, or a companion site that never carries a pricing tier.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#filter">See the four-verb filter</a>
+      <a class="btn btn-ghost" href="https://github.com/NFTYoginis/book-launch-funnel-strategy-skill">View on GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="filter">
+  <div class="wrap">
+    <h2>The four-verb filter</h2>
+    <p class="lead">Every page on a companion site has to earn its place. If it doesn't map to one of these four verbs, it doesn't belong — no matter how much work went into it.</p>
+    <div class="verb-grid">
+      <div class="verb-card"><span class="v">Enter</span><p>The question, as the on-ramp. The most inviting version of what the book asks.</p></div>
+      <div class="verb-card"><span class="v">Understand</span><p>The answer, and the proof. Why the book is worth the reader's time.</p></div>
+      <div class="verb-card"><span class="v">Continue</span><p>The book's own material, extended — what a chapter flagged, followed through.</p></div>
+      <div class="verb-card"><span class="v">Deepen</span><p>Going further, for the reader who wants more — still in service of the book.</p></div>
+    </div>
+    <div class="flag-box">
+      <span class="tag">The refusal gate this skill runs on</span>
+      <p><strong>"I won't let pricing tiers or an offer architecture onto a page that's supposed to be trust-building — the moment pricing psychology appears, the genre breaks. Whether a real paid program exists behind this book is the first question, asked explicitly, never inferred by adding tiers later."</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="channels">
+  <div class="wrap">
+    <h2>Owned → borrowed → earned</h2>
+    <p class="lead">Prove the assets convert before spending goodwill on a cold pitch.</p>
+    <div class="chan-grid">
+      <div class="chan-card"><span class="n">1 · Owned</span><p>The author's own list, podcast, socials. Do these first — this week.</p></div>
+      <div class="chan-card"><span class="n">2 · Borrowed</span><p>Warm network, cross-promotion to adjacent audiences. Low-friction, existing trust.</p></div>
+      <div class="chan-card"><span class="n">3 · Earned</span><p>Cold pitches, tiered by fit, one customized asset per outlet. Never a blast pitch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="emails">
+  <div class="wrap">
+    <h2>The 6-email launch sequence</h2>
+    <p class="lead">Value first, CTA second — the ask doesn't appear until email 6, earned by five emails of real content.</p>
+    <ul class="email-list">
+      <li><span class="num">1</span><span class="beat">Welcome</span><span class="job">The core question, stated plainly. No softening-up for a pitch.</span></li>
+      <li><span class="num">2</span><span class="beat">Setup</span><span class="job">Practical preparation — concrete, low-pressure.</span></li>
+      <li><span class="num">3</span><span class="beat">How-to</span><span class="job">The stage-by-stage walkthrough, told straight.</span></li>
+      <li><span class="num">4</span><span class="beat">Objection-handling</span><span class="job">Meets the hardest moment; stopping early reframed as success.</span></li>
+      <li><span class="num">5</span><span class="beat">Return / re-entry</span><span class="job">How you come back matters more than how you started.</span></li>
+      <li><span class="num">6</span><span class="beat">CTA to purchase</span><span class="job">Ties back to the thesis, states real limitations, makes the one ask.</span></li>
+    </ul>
+    <div class="token-demo">{{BUY_URL}} → one token, across every file, swapped once the sales page exists — verified by a grep for zero remaining.</div>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <h2>Launches architected on this discipline</h2>
+    <div class="proof-block">
+      <!-- TODO: operator — add real launch metrics/links, once ready to name them publicly -->
+      Proof of shipped launch strategies goes here — added by the operator, not invented.
+    </div>
+  </div>
+</section>
+
+<section id="setup">
+  <div class="wrap">
+    <h2>Setup</h2>
+    <ol class="setup-steps">
+      <li>Load this folder into a Claude Project, or point a Claude Code session at it — <code>SKILL.md</code> lets it auto-discover and trigger from a natural request.</li>
+      <li>Answer one question first: does a real paid program or ladder exist behind this book?</li>
+      <li>Run every proposed companion-site page through the four-verb filter before building it.</li>
+      <li>Sequence outreach owned → borrowed → earned; never a blast pitch on the earned tier.</li>
+      <li>Hand the strategy to content-claude for copy and to Builder for the site — this skill specifies, it doesn't write or build.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>Does it write the actual sales page copy?</h3>
+      <p>No — it specifies what the page has to accomplish. content-claude executes the final prose in brand voice.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if the book genuinely has a paid program behind it?</h3>
+      <p>Then it gets the funnel model, built honestly as a funnel — this skill doesn't refuse funnels, it refuses funnel logic imported onto a site that doesn't actually have one.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it build the companion site itself?</h3>
+      <p>No — that's the Builder worker's job. This skill hands over the architecture and the four-verb-filtered page list.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if the live comparables scan fails?</h3>
+      <p>It says so — same disclosure discipline as Fact-Verification's UNVERIFIED banner. No silent guessing.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    MIT License · <a href="https://github.com/NFTYoginis/book-launch-funnel-strategy-skill">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
