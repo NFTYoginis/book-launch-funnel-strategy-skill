@@ -4,6 +4,22 @@ A folder-based ICM specialist that designs the growth architecture around a just
 
 This formalizes a real launch (channel sequencing, a locked-token launch pattern, a 6-email sequence) and a real, documented mistake and its own correction: a full funnel/ecosystem was built for a book, recognized as miscast, and replaced with a four-verb filter. It is not a theory of launch strategy — it's a repeat of what already worked, and a repeat of a mistake already caught and fixed.
 
+## What it produces
+
+An example from a real book: `BOOK-WEBSITE-MAP.md` for *Are You Actually Hungry?*, the document that replaced an earlier funnel-shaped plan. It sets one filter and runs every page of the companion site through it. Excerpt, quoted as written:
+
+> **The filter — every element must pass it or it doesn't belong:**
+> Does this help the reader **ENTER · UNDERSTAND · CONTINUE · or DEEPEN** the book?
+>
+> […]
+>
+> - **Method** → *content survives, page dies.* The thesis ("detox subtracts noise") redistributes into Home + The Book + chapters. It doesn't get its own kingdom.
+> - […]
+> - **Coaching / Programs** → collapse into the single **Work With Gabe** door. No Transformation/Accountability split, no pricing cards, no offer architecture. The moment pricing psychology appears, the genre breaks.
+> […]
+
+The worked refusal built from this correction is in [`examples.md`](examples.md).
+
 ## What this is
 
 Six disciplines, applied to a book's launch:
@@ -34,6 +50,23 @@ Full detail per discipline: `reference/`.
 
 See `identity.md` and `rules.md` for the full contract. In short: it never writes final marketing copy, never builds the site, never spends ad money, never repurposes the book's own content, and never lets pricing tiers onto a page that's supposed to be trust-building — it owns the launch architecture and the judgment call underneath it, using a discipline built from a real launch and a real corrected mistake.
 
+## Where this fits
+
+The book-production shelf, numbered as in the catalog. The skill in this repo is in bold.
+
+1. [Book Ghostwriting](https://github.com/NFTYoginis/book-ghostwriting-skill)
+2. [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill)
+3. [Title & Positioning](https://github.com/NFTYoginis/title-and-positioning-skill)
+4. [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill)
+5. [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill)
+6. **Book Launch & Funnel Strategy** (this repo)
+
+Previous: [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill). All six: [Book Production Skills](https://github.com/NFTYoginis/book-production-skills).
+
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Built by Gabe at The Quiet Ai. The Quiet Scribe Suite (early access) carries your context from one AI tool to the next: [thequietscribe.com](https://thequietscribe.com)
